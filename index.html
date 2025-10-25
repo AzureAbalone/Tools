@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Tools - Hash, Encode, Encrypt & More</title>
-  <meta name="description" content="Free online tools for hashing, encoding, decoding, encryption, and more. MD5, SHA-256, Base64, JSON formatter, and many other utilities.">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tools - Hash, Encode, Encrypt & More</title>
+    <meta name="description" content="Free online tools for hashing, encoding, decoding, encryption, and more. MD5, SHA-256, Base64, JSON formatter, and many other utilities.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">🛠️ Online Tools</div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Online Tools Suite</h1>
-        <p>Powerful utilities for hashing, encoding, encryption, and more. All processing happens in your browser - fast, secure, and private.</p>
-        <div class="search-bar">
-          <input type="text" class="search-input" id="searchInput" placeholder="Search tools...">
-          <span class="search-icon">🔍</span>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🛠️ Online Tools</div>
+            </div>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section class="categories">
-      <div class="container" id="categoriesContainer"></div>
-      <div class="container" id="noResults" style="display: none;">
-        <div class="no-results">
-          <h3>No tools found</h3>
-          <p>Try searching with different keywords</p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Online Tools Suite</h1>
+                <p>Powerful utilities for hashing, encoding, encryption, and more. All processing happens in your browser - fast, secure, and private.</p>
+                <div class="search-bar">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search tools...">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container" id="categoriesContainer"></div>
+            <div class="container" id="noResults" style="display: none;">
+                <div class="no-results">
+                    <h3>No tools found</h3>
+                    <p>Try searching with different keywords</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Open source project by <a href="https://github.com/emn178/online-tools" class="github-link" target="_blank">emn178</a></p>
+            <p style="margin-top: 8px; font-size: 14px;">Modernized version - All processing happens locally in your browser</p>
         </div>
-      </div>
-    </section>
-  </main>
+    </footer>
 
-  <div class="tool-modal" id="toolModal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 id="modalTitle"></h2>
-        <button class="close-btn" onclick="closeModal()">✕</button>
-      </div>
-      <div class="tool-interface" id="toolInterface"></div>
+    <div class="tool-modal" id="toolModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="close-btn" onclick="closeModal()">✕</button>
+            </div>
+            <div class="tool-interface" id="toolInterface"></div>
+        </div>
     </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
